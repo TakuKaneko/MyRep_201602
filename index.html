@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>わくたび！　- 思い出を企画する - </title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- オリジナルCSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- グローバルナビゲーション -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-plane"></i>
+                    <span>わくたび！</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">サービス紹介</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#plan-thumbnail-list">企画一覧</a>
+                    </li>
+                    <li>
+                        <a href="#">ログイン</a>
+                    </li>
+                </ul>
+        <!--検索フォーム-->
+        <form id="nav-search-form" class="navbar-form navbar-right" role="search" action="">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="キーワード検索" name="search" size="30">
+          </div>
+          <button type="submit" class="btn btn-default">
+              <i class="fa fa-search"></i>
+          </button>
+        </form>
+            </div><!-- .navbar-collapse -->
+        </div><!-- .container -->
+    </nav>
+
+
+    <!-- ヘッダ -->
+    <div id="intro">
+        <div id="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 id="brand-heading">思い出を企画する</h1>
+                        <p id="intro-text"> ～ 最高の今をみんなで作る旅行企画共有サービス ～ </p>
+                        <p id="intro-plan-text">What's this?</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- #intro-body -->
+    </div><!-- #intro -->
+
+
+    <!-- サービス紹介 -->
+    <div id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>
+                    <span class="text-under-marker">
+                        <i class="fa fa-plane"></i>
+                        <span>わくたび！とは</span>
+                    </span>
+                </h2>
+                <p>行ってみたい旅を共有し、それに興味を持った人たちで旅を作るサービスです。</p>
+                <p>思いが詰まった旅を企画して、みんなで最高の思い出をつくりましょう！</p>
+
+                <h2><span class="text-under-marker">こんな人たちにオススメです</span></h2>
+                <div id="about-recommend">
+                    <p>・同じ関心や興味を持つ仲間を探したい</p>
+                    <p>・旅行イベントの企画をしたい</p>
+                    <p>・オリジナルツアーを作りたい</p>
+                    <p>・ユニークな旅がしたい</p>
+                    <p>・人生に新しい刺激がほしい</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--
+カレンダー   <i class="fa fa-calendar"></i>
+ユーザー    <i class="fa fa-users"></i>
+円       <i class="fa fa-jpy"></i>
+追加      <i class="fa fa-plus-square-o"></i>
+-->
+
+
+    <!-- 企画一覧 -->
+    <div id="plan-thumbnail-list" class="container content-section text-center">
+        <!-- 企画一覧 Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">おすすめ新着企画</h1>
+            </div>
+        </div><!-- .row -->
+
+        <!-- 企画一覧コンテンツ -->
+        <div id="plan-thumbnail-contents" class="row">
+            <div class="col-md-4 plan-item">
+                <a class="plan-anker" href="#">
+                    <div class="plan-img">
+                        <img src="img/udon.jpg">
+                    </div>
+                    <div class="plan-thumbnail-info">
+                        <div class="plan-title">
+                            <h3>香川にうどん食べに行こう！ 一泊二日で行く四国一周の旅</h3>
+                        </div>
+                        <div class="plan-detail">
+                            <div class="plan-date plan-detail-box">
+                                <i class="fa fa-calendar fa-fw"></i>
+                                <span class="plan-date-start">2016年12月11日</span> ～
+                                <span class="plan-date-end">2016年12月12日</span>
+                            </div>
+                            <div class="plan-party plan-detail-box">
+                                <i class="fa fa-users fa-fw"></i>
+                                現在<span　class="plan-party-value">4</span>人
+                            </div>
+                            <div class="plan-cost plan-detail-box">
+                                <i class="fa fa-jpy fa-fw"></i>
+                                <span>およそ 30,000円</span>
+                            </div>
+                            <div class="plan-location plan-detail-box">
+                                <i class="fa fa-globe fa-fw"></i>
+                                <span>東京　他2県</span>
+                            </div>
+                        </div><!-- .plan-detail -->
+                    </div><!-- .plan-thumbnail-info -->
+                </a>
+            </div><!-- .plan-item -->
+
+
+            <div class="col-md-4 plan-item">
+                <a class="plan-anker" href="#">
+                    <div class="plan-img">
+                        <img src="img/udon.jpg">
+                    </div>
+                    <div class="plan-thumbnail-info">
+                        <div class="plan-title">
+                            <h3>香川にうどん食べに行こう！ 一泊二日で行く四国一周の旅</h3>
+                        </div>
+                        <div class="plan-detail">
+                            <div class="plan-date plan-detail-box">
+                                <i class="fa fa-calendar fa-fw"></i>
+                                <span class="plan-date-start">2016年12月11日</span> ～
+                                <span class="plan-date-end">2016年12月12日</span>
+                            </div>
+                            <div class="plan-party plan-detail-box">
+                                <i class="fa fa-users fa-fw"></i>
+                                現在<span　class="plan-party-value">4</span>人
+                            </div>
+                            <div class="plan-cost plan-detail-box">
+                                <i class="fa fa-jpy fa-fw"></i>
+                                <span>無料</span>
+                            </div>
+                            <div class="plan-location plan-detail-box">
+                                <i class="fa fa-globe fa-fw"></i>
+                                <span>東京　他2県</span>
+                            </div>
+                        </div><!-- .plan-detail -->
+                    </div><!-- .plan-thumbnail-info -->
+                </a>
+            </div><!-- .plan-item -->
+            <div class="col-md-4 plan-item">
+                <a class="plan-anker" href="#">
+                    <div class="plan-img">
+                        <img src="img/udon.jpg">
+                    </div>
+                    <div class="plan-thumbnail-info">
+                        <div class="plan-title">
+                            <h3>香川にうどん食べに行こう！ 一泊二日で行く四国一周の旅</h3>
+                        </div>
+                        <div class="plan-detail">
+                            <div class="plan-date plan-detail-box">
+                                <i class="fa fa-calendar fa-fw"></i>
+                                <span class="plan-date-start">2016年12月11日</span> ～
+                                <span class="plan-date-end">2016年12月12日</span>
+                            </div>
+                            <div class="plan-party plan-detail-box">
+                                <i class="fa fa-users fa-fw"></i>
+                                現在<span　class="plan-party-value">4</span>人
+                            </div>
+                            <div class="plan-cost plan-detail-box">
+                                <i class="fa fa-jpy fa-fw"></i>
+                                <span>無料</span>
+                            </div>
+                            <div class="plan-location plan-detail-box">
+                                <i class="fa fa-globe fa-fw"></i>
+                                <span>東京　他2県</span>
+                            </div>
+                        </div><!-- .plan-detail -->
+                    </div><!-- .plan-thumbnail-info -->
+                </a>
+            </div><!-- .plan-item -->
+            <div class="col-md-4 plan-item">
+                <a class="plan-anker" href="#">
+                    <div class="plan-img">
+                        <img src="img/udon.jpg">
+                    </div>
+                    <div class="plan-thumbnail-info">
+                        <div class="plan-title">
+                            <h3>香川にうどん食べに行こう！ 一泊二日で行く四国一周の旅</h3>
+                        </div>
+                        <div class="plan-detail">
+                            <div class="plan-date plan-detail-box">
+                                <i class="fa fa-calendar fa-fw"></i>
+                                <span class="plan-date-start">2016年12月11日</span> ～
+                                <span class="plan-date-end">2016年12月12日</span>
+                            </div>
+                            <div class="plan-party plan-detail-box">
+                                <i class="fa fa-users fa-fw"></i>
+                                現在<span　class="plan-party-value">4</span>人
+                            </div>
+                            <div class="plan-cost plan-detail-box">
+                                <i class="fa fa-jpy fa-fw"></i>
+                                <span>無料</span>
+                            </div>
+                            <div class="plan-location plan-detail-box">
+                                <i class="fa fa-globe fa-fw"></i>
+                                <span>東京　他2県</span>
+                            </div>
+                        </div><!-- .plan-detail -->
+                    </div><!-- .plan-thumbnail-info -->
+                </a>
+            </div><!-- .plan-item -->
+            <div class="col-md-4 plan-item">
+                <a class="plan-anker" href="#">
+                    <div class="plan-img">
+                        <img src="img/udon.jpg">
+                    </div>
+                    <div class="plan-thumbnail-info">
+                        <div class="plan-title">
+                            <h3>香川にうどん食べに行こう！ 一泊二日で行く四国一周の旅</h3>
+                        </div>
+                        <div class="plan-detail">
+                            <div class="plan-date plan-detail-box">
+                                <i class="fa fa-calendar fa-fw"></i>
+                                <span class="plan-date-start">2016年12月11日</span> ～
+                                <span class="plan-date-end">2016年12月12日</span>
+                            </div>
+                            <div class="plan-party plan-detail-box">
+                                <i class="fa fa-users fa-fw"></i>
+                                現在<span　class="plan-party-value">4</span>人
+                            </div>
+                            <div class="plan-cost plan-detail-box">
+                                <i class="fa fa-jpy fa-fw"></i>
+                                <span>無料</span>
+                            </div>
+                            <div class="plan-location plan-detail-box">
+                                <i class="fa fa-globe fa-fw"></i>
+                                <span>東京　他2県</span>
+                            </div>
+                        </div><!-- .plan-detail -->
+                    </div><!-- .plan-thumbnail-info -->
+                </a>
+            </div><!-- .plan-item -->
+
+
+
+
+
+        </div><!-- #plan-thumbnail-contents -->
+
+    </div><!-- #plan-thumbnail-list -->
+
+    <hr>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container text-center">
+            <p>2015-2016 Copyright &copy; わくわく Inc.</p>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- プラグイン JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- オリジナル JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+    <script type="text/JavaScript">
+        $(function(){
+            $('.plan-item').each(function(i){
+                var delaySpeed = 300;
+                var fadeSpeed = 1000;
+                $(this)
+                    .delay(i*(delaySpeed))
+                    .css({display:'block',opacity:'0'})
+                    .animate({opacity:'1'},fadeSpeed);
+            });
+
+            $('.plan-item').hover(
+                function(){
+                    $(this)
+                        .find('img')
+                        .stop()
+                        .fadeTo("10",1.0); // マウスオーバーで透明度を30%にする
+                    $(this)
+                        .find('.plan-thumbnail-info')
+                        // .animate({backgroundColor: '#98fb98'});
+                       .css("background-color", "#66cdaa");
+                    $(this)
+                        .find('.plan-detail')
+                        .css("color", "#000");
+                }, function(){
+                    $(this)
+                        .find('img')
+                        .stop()
+                        .fadeTo("10",0.5); // マウスアウトで透明度を100%に戻す
+                    $(this)
+                       .find('.plan-thumbnail-info')
+                       .css("background-color", "#fff");
+                    $(this)
+                        .find('.plan-detail')
+                        .css("color", "gray");
+                }
+            );
+        });
+    </script>
+
+</body>
+
+</html>
