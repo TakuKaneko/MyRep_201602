@@ -1,0 +1,375 @@
+/*!
+ * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/*　====================================
+            全体共通　
+====================================　*/
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    color: black;
+    background-color: #fff;
+    outline: 0;
+    background-image: url(../img/about-img-2.jpg);/* no-repeat bottom center scroll;*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+h1, h2, h3 {
+    margin: 0 0 35px;
+    letter-spacing: 1px;
+}
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+a {
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #1d9b6c;
+}
+
+
+/*　====================================
+            グローバルナビ
+====================================　*/
+.navbar-custom {
+    padding: 20px 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: 0 0;
+    margin-bottom: 0;
+    -webkit-transition: background .2s ease-in-out,padding .3s ease-in-out;
+    -moz-transition: background .2s ease-in-out,padding .3s ease-in-out;
+    transition: background .2s ease-in-out,padding .3s ease-in-out;
+}
+.navbar-custom.top-nav-collapse {
+    padding: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    background: #0099CC;
+    opacity: 0.9;
+}
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+}
+.navbar-custom a {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+}
+.navbar-custom .nav li a {
+    -webkit-transition: background .1s ease-in-out;
+    -moz-transition: background .1s ease-in-out;
+    transition: background .1s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+    outline: 0;
+/*    color: rgba(255,255,255,.8); */
+    background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    background-color: transparent;
+}
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+#nav-search-form input[type="text"] {
+    border-radius: 30px;
+}
+#nav-search-form button[type="submit"] {
+    position: relative;
+    left: -45px;
+}
+
+
+/*　====================================
+            サービス紹介　
+====================================　*/
+#intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/top-img-1.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    box-shadow: 0px 10px 10px rgba(10,10,10,0.5);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+#intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+#brand-heading {
+    font-size: 4em;
+    text-shadow: 3px 3px 0 rgba(0,0,0,.5);
+}
+#intro-text {
+    margin-top: 50px;
+    font-size: 2em;
+}
+#login-btn {
+    margin-top: 100px;
+}
+#intro-plan-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    position:relative;
+    bottom: -120px;
+}
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+.btn-default {
+    /*border: 1px solid #42dca3;*/
+    color: #42dca3;
+    border-radius: 30px;
+    background-color: transparent;
+}
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #42dca3;
+    outline: 0;
+    color: #000;
+    background-color: #42dca3;
+}
+.btn-circle {
+    position:relative;
+    bottom: -100px;
+    width: 70px;
+    height: 70px;
+    /*margin-top: 70px;*/
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+/*　====================================
+            コンテンツ共通　
+====================================　*/
+.content-section {
+    padding-top: 50px;
+}
+
+
+/*　====================================
+            わくたび！　について　
+====================================　*/
+#about {
+    background-color: rgba(50,50,50,0.5);
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    letter-spacing: 1.5px;
+}
+#about h2 {
+    font-weight: bold;
+    font-size: 2.3em;
+}
+#about p {
+    font-size: 1.4em;
+}
+#about h2:nth-child(even) {
+    margin-top: 100px;
+}
+#about .text-under-marker {
+    width: 300px;
+    background: linear-gradient(transparent 90%, #ffff66 90%);
+}
+#about-recommend {
+    width: 380px;
+    text-align: left;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*　====================================
+            企画一覧　
+====================================　*/
+
+#plan-thumbnail-list {
+    background-color: #f8f8ff;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px -10px 10px rgba(10,10,10,0.5);
+}
+#plan-thumbnail-list .page-header {
+    border-bottom: 3px solid #008b8b;
+}
+#plan-thumbnail-contents {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.plan-item {
+    padding: 0 25px;
+    height: 350px;
+    margin-bottom: 40px;
+}
+.plan-img {
+    width: 100%;
+    height: 50%;
+}
+.plan-img img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*.plan-img:hover {
+    opacity: 1;
+}*/
+.plan-thumbnail-info {
+    height: 50%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /*outline: solid 1px #dcdcdc;*/
+}
+.plan-title {
+    height: 40%;
+    text-align: left;
+    margin-left: 10px;
+    display: table;
+}
+.plan-title h3 {
+    height: 100%;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+}
+.plan-detail {
+    height: 60%;
+    text-align: left;
+    padding-left: 10px;
+    color: gray;
+}
+.plan-detail-box {
+    width: 100%;
+    height: 25%;
+    font-size: 1.1em;
+}
+/*.plan-date {
+    background-color: blue;
+}
+.plan-party {
+    background-color: red;
+}
+.plan-cost {
+    background-color: yellow;
+}
+.plan-location {
+    background-color: green;
+}
+*/
+
+/*　====================================
+            フッタ　
+====================================　*/
+#footer {
+    padding: 50px 0;
+}
+
+#footer p {
+    margin: 0;
+}
+
