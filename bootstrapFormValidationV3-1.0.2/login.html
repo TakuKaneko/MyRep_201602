@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>新規会員登録画面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- styles -->
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media="all">
+		<link rel="stylesheet" type="text/css" href="bootstrapFormValidationV3-1.0.2.css" media="all">
+		<link href="js/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" media="all" />
+		<style type="text/css">
+		.navbar .container .btn.btn-navbar {
+			float: left !important;
+		}
+		#login-form-block {
+			margin: 70px 0;
+		}
+		#sampleForm {
+			margin: 50px 0;
+		}
+		.repuire {
+			color: #b22222;
+		}
+		img {
+			max-width: 200px;
+		}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="container-fluid">
+			<!-- Example row of columns -->
+			<div class="row" style="margin:50px 0 0 10px;">
+				<h1>新規会員登録</h1>
+			</div>
+
+			<div id="login-form-block">
+				<form id="login-form" class="form-horizontal" role="form" action="#" method="GET">
+					<h4>赤文字の項目は入力必須項目です。</h4>
+
+					<!-- イメージ画像 -->
+					<div class="form-group">
+						<label for="inputSex" class="col-sm-2 col-sm-offset-1 control-label">アイコン</label>
+						<div class="col-sm-7">
+							<div class="row">
+								<label class="radio-inline">
+									<input type="radio" id="inputSex" name="userImg" value="01" checked>
+									<img src="img_tour_pic01.jpg">
+								</label>
+								<label class="radio-inline">
+									<input type="radio" id="inputSex" name="userImg" value="02">
+									<img src="img_tour_pic01.jpg">
+								</label>
+								<label class="radio-inline">
+									<input type="radio" id="inputSex" name="userImg" value="03">
+									<img src="img_tour_pic01.jpg">
+								</label>
+							</div>
+							<div class="row">
+								<label class="radio-inline">
+									<input type="radio" id="inputSex" name="userImg" value="03">
+									<img src="img_tour_pic01.jpg">
+								</label>
+								<label class="radio-inline">
+									<input type="radio" id="inputSex" name="userImg" value="03">
+									<img src="img_tour_pic01.jpg">
+								</label>
+							</div>
+							<p class="text-primary">* プロフィール画面に表示されます。</p>
+						</div>
+					</div>
+
+					<!-- お名前 -->
+					<div class="form-group">
+						<label for="inputName" class="col-sm-2 col-sm-offset-1 control-label"><span class="repuire">お名前(漢字)</span></label>
+						<div class="col-sm-7">
+							<div class="row">
+								<div class="col-sm-6">
+									<input type="text" id="inputName" class="form-control" name="surName" placeholder="姓" valCheck="required text">
+								</div>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" name="name" placeholder="名" valCheck="required text">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- フリガナ -->
+					<div class="form-group">
+						<label for="inputNameKana" class="col-sm-2 col-sm-offset-1 control-label"><span class="repuire">お名前(フリガナ)</span></label>
+						<div class="col-sm-7">
+							<div class="row">
+								<div class="col-sm-6">
+									<input type="text" id="inputNameKana" class="form-control" name="surNameKana" placeholder="セイ" valCheck="required kana">
+								</div>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" name="nameKana" placeholder="メイ" valCheck="required kana">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ユーザネーム -->
+					<div class="form-group">
+						<label for="inputUserName" class="col-sm-2 col-sm-offset-1 control-label">ユーザーネーム</label>
+						<div class="col-sm-7">
+							<input type="text" class="form-control" id="inputUserName" name="userName" placeholder="ユーザーネーム" valCheck="required text">
+							<p class="text-primary">* このサイト上で利用されるあなたの名前です。省略すると、先にご入力いただいた「お名前(漢字)」が使用されます。</p>
+						</div>
+					</div>
+
+					<!-- 性別 -->
+					<div class="form-group">
+						<label for="inputSex" class="col-sm-2 col-sm-offset-1 control-label"><span class="repuire">性別</span></label>
+						<div class="col-sm-7">
+							<label class="radio-inline">
+								<input type="radio" id="inputSex" name="sex" value="m" valCheck="required check"> 男性
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="sex" value="w" valCheck="required check"> 女性
+							</label>
+						</div>
+					</div>
+
+					<!-- 住所 -->
+					<div class="form-group">
+						<label for="inputAddress" class="col-sm-2 col-sm-offset-1 control-label"><span class="repuire">お住まいの都道府県</span></label>
+						<div class="col-sm-7">
+							<div class="row col-sm-6">
+								<select id="address" name="address" class="form-control" valCheck="required select">
+									<option value="">選択してください</option>
+									<option value="01">北海道</option>
+									<option value="02">青森県</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<!-- 電話番号 -->
+					<div class="form-group">
+						<label for="inputTel" class="col-sm-2 col-sm-offset-1 control-label"><span class="repuire">電話番号</span></label>
+						<div class="col-sm-7">
+							<div class="row col-sm-6">
+								<input type="text" class="form-control" id="inputTel" name="tel" placeholder="電話番号" valCheck="required tel">
+							</div>
+						</div>
+					</div>
+
+					<!-- メールアドレス -->
+					<div class="form-group">
+						<label for="inputEmail" class="col-sm-2 col-sm-offset-1 control-label"><span class="repuire">メールアドレス</span></label>
+						<div class="col-sm-7">
+							<input type="email" class="form-control" id="inputEmail" name="mail" placeholder="メールアドレス" valCheck="required email">
+							<p class="text-primary">* ご入力いただいたメールアドレス宛てに確認メールを送付させて頂ますので、お間違いないようご入力ください。</p>
+						</div>
+					</div>
+
+					<!-- パスワード -->
+					<div class="form-group">
+						<label for="inputPw1" class="col-sm-2 col-sm-offset-1 control-label"><span class="repuire">ログインパスワード</span></label>
+						<div class="col-sm-7">
+							<div class="row">
+								<div class="input-group">
+									<span class="input-group-addon">入力　</span>
+									<input type="password" class="form-control" id="inputPw1" placeholder="半角英数字8文字以上で入力してください"　valCheck="required passwd_8-">
+								</div>
+
+								<div class="input-group">
+									<span class="input-group-addon">再入力</span>
+									<input type="password" class="form-control" name="password" valCheck="retype">
+								</div>
+								<p class="text-primary">　* 確認のため、同じパスワードを再度ご入力ください。</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputOtherText" class="col-sm-2 col-sm-offset-1 control-label">自己紹介</label>
+						<div class="col-sm-7">
+							<textarea id="inputOtherText" class="form-control" name="introduction" rows="3" placeholder="ご自由にご入力ください。" valCheck="text"></textarea>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputAgreement" class="col-sm-2 col-sm-offset-1 control-label"><span class="repuire">同意事項</span></label>
+						<div class="col-sm-7">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" id="inputAgreement1" name="agree" valCheck="required check">
+									当サイトの利用規約に同意します。
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-offset-3 col-sm-7 text-center">
+							<div class="row">
+								<div class="col-sm-6">
+									<button type="reset" class="btn btn-lg btn-block btn-default" onclick="location.reload();">
+										<span class="glyphicon glyphicon-remove"></span> リセット
+									</button>
+								</div>
+
+								<div class="col-sm-6">
+									<input type="submit" class="btn btn-lg btn-block btn-primary" valCheck="submit" value="確認">
+								</div>
+							</div>
+						</div>
+					</div>
+					<input type="hidden" name="action" value="user_login">
+				</form>
+			</div>
+
+		</div> <!-- /container -->
+
+		<hr>
+
+		<p>企画日程</p>
+		<form action="">
+			<input type="text" name="event-start-date" id="datepicker" placeholder="イベント開催日程">
+			<input type="submit" value="検索">
+		</form>
+
+
+		<!-- javascript -->
+		<script type="text/javascript" charset="UTF-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="bootstrapFormValidationV3-1.0.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.10.0.custom.min.js"></script>
+
+		<script type="text/javascript" charset="UTF-8">
+			$(document).ready(function() {
+				$('#login-form').bootstrapFormValidation({
+					'alertMsgClass'        : 'alert-msg',
+					'addIcon'              : 'true',
+					'warningIcon'          : 'glyphicon-remove',
+					'requiredMessage'      : '入力必須項目です。',
+					'invalidMessage'       : '不正な値です。',
+					'inputTooShortMessage' : 'パスワードの文字数が不足しています。',
+					'notMatchedMessage'    : '再入力値が異なります。'
+				});
+
+				$('#datepicker').datepicker({
+					changeMonth: true,
+					changeYear: true,
+					dateFormat:'yy-mm-dd',
+					minDate:'-0m-0d-1y',
+					maxDate:'+0m+0d+1y',
+					dayNamesMin:["日","月","火","水","木","金","土"],
+					monthNamesShort:['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+					firstDay:0,
+					showOtherMonths:'true',
+					showMonthAfterYear:'true',
+					yearSuffix: '年'
+				});
+			});
+		</script>
+
+	</body>
+</html>
