@@ -49,6 +49,18 @@ a:focus {
 /*　====================================
             グローバルナビ
 ====================================　*/
+.navbar-text {
+    margin: 0 15px;
+    margin-top: 12px;
+}
+.navbar-text img {
+    margin: 0 0;
+}
+.navbar-text .welcome-msg {
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+}
 .navbar-custom {
     padding: 20px 0;
     border-bottom: 0;
@@ -97,7 +109,13 @@ a:focus {
     position: relative;
     left: -45px;
 }
-
+.dropdown-menu > li > a {
+    padding: 2px 10px;
+    font-size: 1.2em;
+}
+.dropdown-menu > li > a:hover {
+    font-weight: bold;
+}
 
 /*　====================================
             サービス紹介　
