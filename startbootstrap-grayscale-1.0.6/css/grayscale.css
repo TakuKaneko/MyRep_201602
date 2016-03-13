@@ -147,9 +147,6 @@ a:focus {
     margin-top: 50px;
     font-size: 2em;
 }
-#login-btn {
-    margin-top: 100px;
-}
 #intro-plan-text {
     font-size: 1.5em;
     font-weight: bold;
@@ -157,17 +154,16 @@ a:focus {
     bottom: -120px;
 }
 .btn {
-    border-radius: 0;
+    /*border-radius: 0;*/
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-weight: 400;
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
 
-.btn-default {
-    /*border: 1px solid #42dca3;*/
+/*.btn-default {
     color: #42dca3;
     border-radius: 30px;
     background-color: transparent;
@@ -178,7 +174,7 @@ a:focus {
     outline: 0;
     color: #000;
     background-color: #42dca3;
-}
+}*/
 .btn-circle {
     position:relative;
     bottom: -100px;

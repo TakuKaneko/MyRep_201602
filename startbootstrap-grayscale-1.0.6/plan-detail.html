@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>わくたび！　- 思い出を企画する - </title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- オリジナルCSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/plan_detail.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="margin-top: 80px;">
+
+    <!-- グローバルナビゲーション -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-plane"></i>
+                    <span>わくたび！</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <p class="navbar-text">
+                    <img src="img/udon.jpg" height="30" width="40">
+                    <a class="welcome-msg" href="#">ゲスト</a>さん ようこそ！
+                </p>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="#">企画検索</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">マイリスト<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>あなたが参加中の企画</li>
+                            <li class="divider"></li>
+                            <li><a href="#">そうだ、どっか行こう！</a></li>
+                            <li><a href="#">そうだ、どっか行こう！</a></li>
+                            <li><a href="#">そうだ、どっか行こう！</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">メニュー<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">プロフィール確認</a></li>
+                            <li><a href="#">ログアウト</a></li>
+                            <li><a href="#">運営問い合わせ</a></li>
+                            <li><a href="#">免責事項</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- .navbar-collapse -->
+        </div><!-- .container -->
+    </nav>
+
+
+    <div id="plan-detail-content" class="container">
+        <!-- 企画詳細メインコンテンツ -->
+        <div id="plan-detail-content-second" class="col-md-8 col-xs-12">
+            <div id="plan-title" class="row">
+                <h3>企画タイトル</h3>
+            </div>
+            <div id="plan-img">
+                <img src="img/about-img-1.jpg" alt="">
+            </div>
+            <div id="plan-detail-value">
+                <dl>
+                    <dt>
+                        <i class="fa fa-user"></i>
+                        <span>企画者</span>
+                    </dt>
+                    <dd>
+                        <img src="img/udon.jpg" height="40" width="50">
+                        <span>運営者</span>
+                    </dd>
+
+                    <dt>
+                        <i class="fa fa-book"></i>
+                        <span>説明文</span>
+                    </dt>
+                    <dd>せつめいぶん。 せつめいぶん。 せつめいぶん。 <br>せつめいぶん。 せつめいぶん。 せつめいぶん。 <br>せつめいぶん。 せつめいぶん。 せつめいぶん。 <br></dd>
+
+                    <dt>
+                        <i class="fa fa-calendar fa-fw"></i>
+                        <span>開催日時</span>
+                    </dt>
+                    <dd>
+                        <span>2016年3月16日</span> ～
+                        <span>2016年3月16日</span>
+                    </dd>
+
+                    <dt>
+                        <i class="fa fa-pencil-square-o"></i>
+                        <span>旅の内容</span>
+                    </dt>
+                    <dd>[3月16日]<br>13:00 集合<br>15:00 解散</dd>
+
+                    <dt>
+                        <i class="fa fa-jpy fa-fw"></i>
+                        <span>予算</span>
+                    </dt>
+                    <dd>1000円</dd>
+
+                    <dt>
+                        <i class="fa fa-globe fa-fw"></i>
+                        <span>訪問場所</span>
+                    </dt>
+                    <dd>東京 、 神奈川</dd>
+
+                    <dt>
+                        <i class="fa fa-exclamation-triangle"></i>
+                        <span>注意事項</span>
+                    </dt>
+                    <dd>体力ないとキツいかも</dd>
+                </dl>
+                <div id="plan-detail-form">
+                    <form action="">
+                        <input type="hidden" name="action" value="user_join">
+                        <button type="submit" class="btn btn-primary">参加する</button>
+                    </form>
+                </div>
+            </div><!-- #plan-detail-value -->
+        </div><!-- .col-md-8 -->
+
+        <!-- 企画詳細サブコンテンツ -->
+        <div id="plan-sub-content" class="col-md-4 col-xs-12">
+
+            <div id="plan-join-content">
+                <h4>
+                    <i class="fa fa-user"></i>
+                    <span>あなたの参加状況</span>
+                </h4>
+                <span>まだ参加していません。</span>
+                <div id="plan-join-form">
+                    <form action="">
+                        <input type="hidden" name="action" value="user_join">
+                        <button type="submit" class="btn btn-primary">参加する</button>
+                    </form>
+                </div>
+<!--                 <span>参加しています！</span>
+                <div id="plan-join-form">
+                    <form action="">
+                        <input type="hidden" name="action" value="user_exit">
+                        <button type="submit" class="btn btn-danger">参加を取り消す</button>
+                    </form>
+                </div> -->
+            </div>
+            <hr>
+
+            <div id="plan-party-member-content">
+                <h4>
+                    <i class="fa fa-users fa-fw"></i>
+                    <span>参加者リスト</span>
+                </h4>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="img/udon.jpg" height="40" width="50">
+                            <span>guest</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img/udon.jpg" height="40" width="50">
+                            <span>guest</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img/udon.jpg" height="40" width="50">
+                            <span>guest</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+            <div id="plan-share-content">
+                <h4>
+                    <i class="fa fa-comment-o"></i>
+                    <span>シェアする</span>
+                </h4>
+                <img src="PNG/rounded/facebook_32.png" height="32" width="32">
+                <img src="PNG/rounded/twitter_32.png" height="32" width="32">
+                <img src="PNG/rounded/google_32.png" height="32" width="32">
+                <img src="PNG/rounded/technorati_32.png" height="32" width="32">
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <div id="pagetop-btn">
+        <img src="img/m_e_others_400.png">
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container text-center">
+            <p>2015-2016 Copyright &copy; わくわく Inc.</p>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- プラグイン JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- オリジナル JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+    <script type="text/JavaScript">
+        $(function(){
+            $('.plan-item').each(function(i){
+                var delaySpeed = 300;
+                var fadeSpeed = 1000;
+                $(this)
+                    .delay(i*(delaySpeed))
+                    .css({display:'block',opacity:'0'})
+                    .animate({opacity:'1'},fadeSpeed);
+            });
+
+            $('.plan-item').hover(
+                function(){
+                    $(this)
+                        .find('img')
+                        .stop()
+                        .fadeTo("10",1.0); // マウスオーバーで透明度を30%にする
+                    $(this)
+                        .find('.plan-thumbnail-info')
+                        // .animate({backgroundColor: '#98fb98'});
+                       .css("background-color", "#66cdaa");
+                    $(this)
+                        .find('.plan-detail')
+                        .css("color", "#000");
+                }, function(){
+                    $(this)
+                        .find('img')
+                        .stop()
+                        .fadeTo("10",0.5); // マウスアウトで透明度を100%に戻す
+                    $(this)
+                       .find('.plan-thumbnail-info')
+                       .css("background-color", "#fff");
+                    $(this)
+                        .find('.plan-detail')
+                        .css("color", "gray");
+                }
+            );
+
+            $('#plan-sub-content').height(
+                $('#plan-detail-content').height()
+            );
+
+            var flag = false;
+            var topBtn = $('#pagetop-btn');
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    if (flag == false) {
+                        flag = true;
+                        topBtn
+                            .stop()
+                            .animate({
+                                'bottom': '30px'
+                            }, 250)
+                            .fadeIn();
+                    }
+                } else {
+                    if (flag) {
+                        flag = false;
+                        // topBtn.stop().animate({
+                        //     'bottom': '-40px'
+                        // }, 250);
+                        topBtn.stop().fadeOut();
+                    }
+                }
+            });
+            topBtn.click(function () {
+                $('body, html').animate({ scrollTop: 0 }, 500);
+                return false;
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

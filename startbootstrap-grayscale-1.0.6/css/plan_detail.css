@@ -1,0 +1,131 @@
+/*!
+ * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/*　====================================
+            企画詳細画面　
+====================================　*/
+html, body {
+    height: auto;
+}
+.container {
+    padding-right: 0;
+}
+#plan-detail-content {
+    height: 100%;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#plan-detail-content-second {
+    height: 100%;
+}
+#plan-title h3 {
+    text-align: left !important;
+    font-size: 3em !important;
+    padding-top: 15px !important;
+    margin: 0 30px 15px !important;
+}
+#plan-img img {
+    width: 90%;
+    height: 50%;
+}
+#plan-detail-value {
+    height: 100%;
+}
+#plan-detail-value dl {
+    height: 100%;
+}
+#plan-detail-value dt {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    height: 30px;
+}
+#plan-detail-value dd {
+    padding-left: 30px;
+}
+#plan-detail-value i {
+    width: 30px;
+    text-align: center;
+}
+#plan-detail-form form {
+    width: 300px;
+    margin: 30px auto;
+    text-align: center;
+}
+#plan-detail-form button {
+    font-size: 2em;
+}
+#plan-sub-content {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #FFEFD5;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+#plan-sub-content h4 {
+    margin: 20px 0;
+    font-weight: normal;
+}
+#plan-join-content {
+    overflow: hidden;
+}
+#plan-join-content h4 + span {
+    color: gray;
+    font-size: 1em;
+    float: left;
+    margin: 0 20px;
+}
+#plan-join-content form {
+    float: left;
+}
+#plan-share-content img:nth-child(even) {
+    margin: 0 15px;
+}
+#plan-party-member-content ul {
+    list-style-type: none;
+    padding-left: 15px !important;
+}
+#plan-party-member-content li {
+    margin: 10px 0;
+}
+
+/*ページトップボタン*/
+#pagetop-btn {
+    position: fixed;
+    right: 134px;
+    z-index: 9999;
+}
+#pagetop-btn img {
+    width: 70px;
+    height: 63px;
+    bottom: -80px;
+}
+#pagetop-btn:after {
+    content: " ";
+    display: block;
+    /*background-image: url(../img/pagetop2.jpg);*/
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition-duration: .45s;
+    -webkit-transition-property: top;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-timing-function: 'ease-in-out';
+    transition-duration: .45s;
+    transition-property: top;
+    transition-delay: 0s;
+    transition-timing-function: 'ease-in-out';
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+#pagetop-btn:hover:after {
+    top: -14px;
+}
